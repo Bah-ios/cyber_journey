@@ -1,3 +1,4 @@
-with open("file.txt", 'r') as file:
+with open("sample.log", 'r') as file:
     for line in file:
-        
+        if "Failed password" in line:
+            print(line)
