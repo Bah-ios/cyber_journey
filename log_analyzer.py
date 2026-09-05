@@ -12,9 +12,9 @@ with open("sample.log", 'r') as file:
                 counts[key] = 1
     for user_info,attempt in counts.items():
         print("{} from {}: {} attempts".format(user_info[0],user_info[1], attempt))
-        
-    print("Failed login attempts: {}".format(count))
-    if count >= 3:
-        print("ALERT: possible brute-force attempt detected")
-    else:
-        print("Activity within normal range")
+        if attempt >= 3:
+            print("ALERT: possible brute-force attempt detected from {} with ip {}".format(user_info[0], user_info[1] ))
+        else:
+            print("Activity within normal range")
+    print("Total Failed login attempts: {}".format(count))
+
