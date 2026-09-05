@@ -10,6 +10,7 @@ def scan():
             s.connect(("localhost", port))
             print("port {} is Open".format(port))
         except ConnectionRefusedError:
-            print("Port {} is closed".format(port))
-            
+            print("Port {} is closed".format(port)) 
+
+
 scan()

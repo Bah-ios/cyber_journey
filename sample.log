@@ -8,3 +8,17 @@ Sep 04 16:46:28 papito sshd-session[46289]: Failed password for papa from ::1 po
 Sep 04 16:46:40 papito sshd-session[46289]: Failed password for papa from ::1 port 51982 ssh2
 Sep 04 16:46:42 papito sshd-session[46289]: Connection closed by authenticating user papa ::1 port 51982 [preauth]
 Sep 04 16:46:42 papito sshd-session[46289]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser>
+Sep 05 04:20:31 kali systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Sep 05 04:20:31 kali sshd[168167]: Server listening on 0.0.0.0 port 22.
+Sep 05 04:20:31 kali sshd[168167]: Server listening on :: port 22.
+Sep 05 04:20:31 kali systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Sep 05 04:21:13 kali sshd-session[168802]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=anony
+Sep 05 04:21:15 kali sshd-session[168802]: Failed password for anony from ::1 port 39548 ssh2
+Sep 05 04:21:20 kali sshd-session[168802]: Accepted password for anony from ::1 port 39548 ssh2
+Sep 05 04:21:20 kali sshd-session[168802]: pam_unix(sshd:session): session opened for user anony(uid=1000) by anony(uid=0)
+Sep 05 04:23:03 kali sshd-session[170809]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=anony
+Sep 05 04:23:05 kali sshd-session[170809]: Failed password for anony from ::1 port 38834 ssh2
+Sep 05 04:23:08 kali sshd-session[170809]: Failed password for anony from ::1 port 38834 ssh2
+Sep 05 04:23:12 kali sshd-session[170809]: Failed password for anony from ::1 port 38834 ssh2
+Sep 05 04:23:14 kali sshd-session[170809]: Connection closed by authenticating user anony ::1 port 38834 [preauth]
+Sep 05 04:23:14 kali sshd-session[170809]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=anony
