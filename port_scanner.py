@@ -13,4 +13,4 @@ def scan():
             print("Port {} is closed".format(port)) 
 
 
-scan()
+scan() 
