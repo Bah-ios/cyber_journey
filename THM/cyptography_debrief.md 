@@ -1,0 +1,17 @@
+Successfully imported the GPG private key and decrypted the protected message to retrieve the secret word. Demonstrates correct sequencing of keyring setup before decryption.
+
+Core OpenPGP workflow: importing trusted keys and recovering encrypted data. Essential for secure communications recovery scenarios.
+
+Flow:
+- Import GPG private key into keyring
+- Decrypt ciphertext with imported key
+- Extract plaintext secret word
+
+Inspecting SSH keys via cat exposes sensitive material in terminal scrollback. ssh-keygen -lf is the standard approach to extract algorithm and fingerprint safely without full key exposure.
+
+Credential security best practice: minimize sensitive data in logs and terminal history. ssh-keygen -lf is the secure alternative for key inspection.
+
+Flow:
+- Navigate to SSH key directory
+- Use ssh-keygen -lf to verify key type
+- Confirm algorithm without exposing private material
