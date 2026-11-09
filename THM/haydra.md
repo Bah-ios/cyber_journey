@@ -15,3 +15,11 @@ Flow:
 - Target web application reached
 - Login form identified
 - Form parameters confirmed for brute force
+
+Improvements
+
+• Capture live login traffic with a proxy
+  Use Burp Suite or OWASP ZAP to intercept a real login attempt. Copy the exact POST body, path, and response to eliminate field-name guessing.
+
+• Detect and handle CSRF tokens in forms
+  Before brute forcing, inspect the HTML for hidden inputs (CSRF tokens, nonces). Extract and rotate them if the server enforces freshness.
