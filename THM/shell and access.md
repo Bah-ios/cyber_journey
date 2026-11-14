@@ -15,3 +15,15 @@ Flow:
 - Uploaded shell.php to upload endpoint
 - Verified execution through cmd parameter
 - Enumerated system via web shell
+
+Multiple reverse shell payloads were submitted with malformed syntax and wrong separators before a working callback was established.
+
+Careful payload construction and testing reduces noise and avoids tripping defenses with repeated failed exploit attempts.
+
+Flow:
+- Submit reverse shell payload via command injection
+- Payload separators and quoting were inconsistent
+- Retried several variants before shell connected
+
+• Stabilize shells before enumerating
+  Upgrade the TTY (python3 -c 'import pty; pty.spawn("/bin/bash")') for better stability before exploring.
